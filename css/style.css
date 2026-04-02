@@ -1,0 +1,69 @@
+*{
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o preenchimento padrão */
+    font-family: 'Arial', sans-serif;  /* Define uma fonte padrão */
+    scroll-behavior: smooth;  /* Rolagem suave para links de âncora */
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: black;
+}
+
+.navbar {
+  display: flex; /* Exibe os itens em linha */
+  justify-content: space-between; /* Espaça os itens igualmente */
+  align-items: center; /* Alinha os itens verticalmente */
+  background: #120f22; /* Cor de fundo do navbar */
+  padding: 15px 20px; /* Espaçamento interno do navbar */
+  color: white;
+  border-bottom: #00ff88 2px solid; /* Borda inferior verde neon */
+    .logo { /* Estiliza a seção do logo */
+    display: flex; /* Exibe os itens em linha */
+    align-items: center; /* Alinha os itens verticalmente */
+    gap: 10px; /* Espaçamento entre o logo e o texto */
+      h1 {
+      font-size: 18px;
+      letter-spacing: 2px; /* Espaçamento entre as letras */
+    }
+  }
+}
+.menu {
+  align-items: center; /* Alinha os itens verticalmente */
+  justify-content: space-between; /* Espaça os itens igualmente */
+  display: flex; /* Exibe os itens em linha */
+  padding: 0px; /* Remove o preenchimento interno */
+  background: #272626;
+  color: white;
+
+  .play button {
+    background: #00ff88;
+    border-radius: 5px;
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border: none; /* Remove a borda padrão */
+    font-weight: bold; /* Deixa o texto do botão em negrito */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    margin-right: 20px; /* Espaçamento à direita do botão */
+    }
+
+  li{
+    font-size: 17px; /* Tamanho da fonte dos itens do menu */
+    transition: 0.3s; /* Transição suave para o efeito de hover */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    display: inline-block; /* Exibe os itens do menu em linha */
+    padding: 25px; /* Espaçamento interno dos itens do menu */
+    text-transform: uppercase; /* Deixa o texto dos itens do menu em maiúsculas */
+    a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: white;
+    }
+  }
+  a:hover { /* Efeito de hover para os links do menu */
+  color: #00ff88;
+  }
+}
+
+@media (min-width: 480px) {
+  
+}
