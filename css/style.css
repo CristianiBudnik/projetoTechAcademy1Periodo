@@ -20,10 +20,12 @@ header{
   text-align: center;
   background-color: white;
   img{
-    width: 150px;
+    max-width: 150px;
+    width: auto;
   }
   nav{
     a{
+      padding: 30px;
       line-height: 50px;
       text-decoration: none;
       color: black;

@@ -14,8 +14,8 @@ body {
 }
 header{
   position: fixed;
-  width: 100%;
-  top: 0;
+  top: 0px;
+  width: 100%; 
   padding: 5px;
   text-align: center;
   background-color: white;
@@ -24,6 +24,7 @@ header{
   }
   nav{
     a{
+      padding: 30px;
       line-height: 50px;
       text-decoration: none;
       color: black;
@@ -59,6 +60,15 @@ main{
     .texto{
       font-size: 18px;
       line-height: 1.5;
+      color: black;
+    }
+    .controles {
+      text-align: center;
+    }
+
+    img{
+      width: 400px;
+      height: auto;
     }
   }
 }
