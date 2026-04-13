@@ -9,13 +9,6 @@ const scriptsInEvents = {
 		if (label){
 			label.text="Cristais: "+ runtime.globalVars.cristaisColetados;
 		}
-	},
-
-	async FolhaDeEventosEmBreve_Event3_Act7(runtime, localVars)
-	{
-		function abrirModalEmBreve() {
-		    document.getElementById("modalPropaganda").style.display = "flex";
-		}
 	}
 };
 

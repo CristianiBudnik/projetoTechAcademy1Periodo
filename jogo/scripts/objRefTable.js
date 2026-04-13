@@ -14,7 +14,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Behaviors.Sin,
 		C3.Plugins.Mouse,
 		C3.Plugins.Browser,
-		C3.Behaviors.Fade,
+		C3.Plugins.Audio,
 		C3.Plugins.System.Cnds.OnLayoutStart,
 		C3.Plugins.System.Acts.SetTimescale,
 		C3.Plugins.Sprite.Cnds.OnCollision,
@@ -28,6 +28,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Keyboard.Cnds.OnKey,
 		C3.Behaviors.Platform.Acts.SimulateControl,
 		C3.Plugins.Sprite.Acts.SetMirrored,
+		C3.Plugins.Audio.Acts.Play,
 		C3.Plugins.Keyboard.Cnds.OnKeyReleased,
 		C3.Plugins.Sprite.Acts.Destroy,
 		C3.JavaScriptInEvents.Geral_Event7_Act2,
@@ -36,14 +37,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Behaviors.Follow.Acts.FollowObject,
 		C3.Plugins.System.Cnds.EveryTick,
 		C3.Plugins.Sprite.Acts.MoveForward,
-		C3.Plugins.Mouse.Cnds.OnObjectClicked,
-		C3.Plugins.Sprite.Acts.SetX,
-		C3.Plugins.Sprite.Exps.X,
-		C3.Plugins.Sprite.Acts.SetVisible,
-		C3.Behaviors.Fade.Acts.SetFadeInTime,
-		C3.Behaviors.Fade.Acts.StartFade,
-		C3.Plugins.Browser.Acts.GoToURL,
-		C3.JavaScriptInEvents.FolhaDeEventosEmBreve_Event3_Act7
+		C3.Plugins.Mouse.Cnds.OnObjectClicked
 	];
 };
 self.C3_JsPropNameTable = [
@@ -79,9 +73,8 @@ self.C3_JsPropNameTable = [
 	{LAVA: 0},
 	{pedra: 0},
 	{montanhas2: 0},
-	{Esmaecer: 0},
-	{Sprite: 0},
 	{Sprite2: 0},
+	{Áudio: 0},
 	{cristaisColetados: 0},
 	{velocidadeSombra: 0}
 ];
@@ -112,6 +105,6 @@ self.InstanceType = {
 	LAVA: class extends self.ISpriteInstance {},
 	pedra: class extends self.ISpriteInstance {},
 	montanhas2: class extends self.ISpriteInstance {},
-	Sprite: class extends self.ISpriteInstance {},
-	Sprite2: class extends self.ISpriteInstance {}
+	Sprite2: class extends self.ISpriteInstance {},
+	Áudio: class extends self.IInstance {}
 }

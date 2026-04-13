@@ -21,6 +21,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
             paginaToda.style.pointerEvents = "none";
         }
     }
+
+    document.querySelector("iframe").focus();
     
 });
  
