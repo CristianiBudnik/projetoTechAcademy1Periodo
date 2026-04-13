@@ -8,9 +8,11 @@
 }
 
 body {
+    margin-top: 180px;
     font-family: Arial, sans-serif;
     color: goldenrod;
-    background: white;
+    background: black;
+    margin-top: 180px;
 }
 
 header {
@@ -20,41 +22,43 @@ header {
     background-color: white;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     
-}
 
-header nav {
+
+    nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
     padding: 10px 20px
-}
+    }
 
-header nav .logo img {
+    .logo img {
     filter: drop-shadow(5px 5px 5px goldenrod);
     max-width: 300px;
     height: auto;
     display: block;
-}
+    }
 
-header nav ul {
+    ul {
     display: flex;
     list-style: none;
-    gap: 20px; /* Espaçamento entre os itens */
-}
+    gap: 20px; 
+    }
 
-header nav ul li a {
+    li a {
     text-decoration: none;
     color: black;
     font-weight: bold;
     font-size: 18px;
     transition: color 0.3s;
+    }
+
+    a:hover {
+    color: goldenrod;
+    }
 }
 
-header nav ul li a:hover {
-    color: goldenrod;
-}
 
 .banner {
     width: 100%;
@@ -71,6 +75,7 @@ main {
     background-color: whitesmoke;
     border-radius: 15px;
     overflow: hidden;
+    box-shadow: 4px 4px 10px 2px goldenrod;
     section {
     padding: 30px 20px;
     text-align: center;
@@ -85,7 +90,7 @@ main {
     line-height: 1.6;
     }
     img {
-    max-width: 100%;
+    max-width: 30%;
     height: auto;
     margin-top: 20px;
     }
@@ -94,12 +99,15 @@ main {
 footer {
     text-align: center;
     padding: 20px;
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
 }
 
 
 @media (max-width: 480px) {
+    body {
+        margin-top: 125px;
+    }
     header nav {
         flex-direction: column;
         text-align: center;
@@ -135,11 +143,17 @@ footer {
 
     main section {
         padding: 60px;
-        text-align: left; /* Texto alinhado à esquerda no desktop */
+        text-align: left; 
     }
 
     .h2-main {
-        font-size: 24px; /* Reduzi o tamanho, 40px fica muito grande no celular */
+        margin-left: 30px;
+        font-size: 24px;
+    }
+
+    div img{
+        max-width: 70%;
+        margin-left: 30px;
     }
 
 }

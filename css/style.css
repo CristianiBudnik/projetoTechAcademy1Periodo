@@ -7,10 +7,17 @@
     scrollbar-width: none;
 }
 
+#conteudo-sensivel {
+    width: 100%;
+    min-height: 100vh;
+    transition: filter 0.6s ease-in-out;
+    filter: blur(30px); 
+}
+
 body {
     font-family: Arial, sans-serif;
     color: goldenrod;
-    background: white;
+    background: black;
 }
 
 header {
@@ -18,84 +25,129 @@ header {
     width: 100%;
     top: 0;
     background-color: white;
-}
 
-header nav {
+    nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
     padding: 10px 20px;
-}
+    }
 
-header nav .logo img {
+    .logo img {
     filter: drop-shadow(5px 5px 5px goldenrod);
     max-width: 300px;
     height: auto;
     display: block;
-}
+    }
 
-header nav ul {
+    ul {
     display: flex;
     list-style: none;
     gap: 20px; /* Espaçamento entre os itens */
-}
+    }
 
-header nav ul li a {
+    li a {
     text-decoration: none;
     color: black;
     font-weight: bold;
     font-size: 18px;
     transition: color 0.3s;
+    }
+
+    a:hover {
+    color: goldenrod;
+    }
+
+.btn-tema {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: goldenrod;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 10px;
 }
 
-header nav ul li a:hover {
-    color: goldenrod;
+body.light-mode {
+    background: whitesmoke;
+    color: #121212;
+}
+
+body.light-mode #conteudo-sensivel main {
+    background-color: white;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+body.light-mode header {
+    background-color: #ddd;
+}
+
+body.light-mode .texto {
+    color: #333;
+}
 }
 
 .banner {
     width: 100%;
     margin-top: 70px;
-}
-.banner img{
-    width: 100%;
+
+    .banner img{
+        width: 100%;
+    }
 }
 
 main {
     width: 90%;
-    max-width: 1200px;
+    max-width: 600px;
     margin: 40px auto;
     background-color: whitesmoke;
     border-radius: 15px;
     overflow: hidden;
+    box-shadow: 4px 4px 10px 2px goldenrod;
     
     section {
     padding: 30px 20px;
     text-align: center;
+        .h2-main {
+        font-size: 28px;
+        margin-bottom: 15px;
+        }
+        .texto {
+        color: black;
+        font-size: 16px;
+        line-height: 1.6;
+        }
     }
-    .h2-main {
-    font-size: 28px;
-    margin-bottom: 15px;
-    }
-    .texto {
-    color: black;
-    font-size: 16px;
-    line-height: 1.6;
-    }
-    img {
-    max-width: 100%;
-    height: auto;
+
+    div {
     margin-top: 20px;
+
+        .btn-jogar {
+        display: inline-block;
+        padding: 15px 40px;
+        background-color: #2600ff;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 18px;
+        border-radius: 50px;
+        border: none;
+        cursor: pointer;
+        }
+
     }
 }
 
 footer {
     text-align: center;
     padding: 20px;
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
 }
+
+
 
 
 @media (max-width: 480px) {
@@ -108,6 +160,14 @@ footer {
     header nav ul {
         gap: 10px;
         padding: 10px 0;
+    }
+
+    header nav ul li {
+        transition: color 0.3s;
+
+         a:hover {
+        color: goldenrod;
+        }
     }
 
     header nav .logo img {
@@ -133,11 +193,11 @@ footer {
 
     main section {
         padding: 60px;
-        text-align: left; /* Texto alinhado à esquerda no desktop */
+        text-align: center; 
     }
 
     .h2-main {
-        font-size: 24px; /* Reduzi o tamanho, 40px fica muito grande no celular */
+        font-size: 24px;
     }
 
 }
