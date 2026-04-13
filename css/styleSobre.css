@@ -20,9 +20,7 @@ header {
     width: 100%;
     top: 0;
     background-color: white;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    
-
+    border-radius: 3px;
 
     nav {
     display: flex;
@@ -30,43 +28,44 @@ header {
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 10px 20px
-    }
+    padding: 10px 20px;
+    
+        .logo img {
+        filter: drop-shadow(5px 5px 5px goldenrod);
+        max-width: 300px;
+        height: auto;
+        display: block;
+        }
 
-    .logo img {
-    filter: drop-shadow(5px 5px 5px goldenrod);
-    max-width: 300px;
-    height: auto;
-    display: block;
-    }
+        ul {
+        display: flex;
+        list-style: none;
+        gap: 20px; 
+        }
 
-    ul {
-    display: flex;
-    list-style: none;
-    gap: 20px; 
-    }
+        li a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        font-size: 18px;
+        transition: color 0.3s;
+        }
 
-    li a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    font-size: 18px;
-    transition: color 0.3s;
-    }
-
-    a:hover {
-    color: goldenrod;
+        a:hover {
+        color: goldenrod;
+        }
+        #btn-tema {
+        padding: 10px 20px;
+        cursor: pointer;
+        background-color: goldenrod;
+        border: none;
+        font-weight: bold;
+        border-radius: 5px;
+        margin: 10px;
+        }
     }
 }
 
-
-.banner {
-    width: 100%;
-    margin-top: 70px;
-}
-.banner img{
-    width: 100%;
-}
 
 main {
     width: 90%;

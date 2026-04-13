@@ -19,7 +19,18 @@
     <div id="conteudo-sensivel">
     <header>
         <nav>
-
+            <button id="btn-tema" onclick="
+            if (document.body.style.backgroundColor == 'rgb(40, 40, 40)') {
+                document.body.style.backgroundColor = 'white';
+                document.body.style.color = 'black';
+                document.getElementById('btn-tema').innerText = 'Tema Escuro';
+            } else {
+                document.body.style.backgroundColor = 'rgb(40, 40, 40)';
+                document.body.style.color = 'white';
+                document.getElementById('btn-tema').innerText = 'Tema Claro';
+            }
+        ">Tema Escuro</button>
+        
             <a href="#home" title="HOME" class="logo">
                 <img src="img/logo.png" alt="logo">
             </a>
@@ -67,8 +78,44 @@
 
     </div> 
 
-    <script src="javascript/index.js" defer></script>
+    <script>
 
+        const ANO_LANCAMENTO = 2026;
+        let anoAtual = new Date().getFullYear();
+
+        if (anoAtual == ANO_LANCAMENTO) {
+            alert("📢 NOTÍCIA: Este jogo é um GRANDE LANÇAMENTO deste ano!");
+        }
+
+        
+        let nomeVisitante = prompt("Bem-vindo ao site! Qual é o seu nome?");
+        let idadeVisitante = prompt("Olá, " + nomeVisitante + "! Qual é a sua idade para acessar o conteúdo sensível?");
+
+        if (idadeVisitante >= 18) {
+            
+            alert("Parabéns, " + nomeVisitante + "! Seu acesso foi liberado com sucesso.");
+            // ITEM 4: MANIPULAÇÃO DE VISIBILIDADE
+            document.getElementById("conteudo-sensivel").style.filter = "none";
+        } else {
+           
+            alert("Lamentamos, " + nomeVisitante + ". Por segurança, as imagens do jogo permanecerão borradas.");
+            
+            document.getElementById("conteudo-sensivel").style.filter = "blur(20px)";
+        }
+    </script>
+    <script>
+        function alternarTema(){
+            if (document.body.style.backgroundColor == 'rgb(40, 40, 40)'){
+                document.body.style.backgroundColor = 'white';
+                document.body.style.color = 'black';
+                document.getElementById('bnt-tema').innerText = 'Tema Escuro';
+            } else {
+                document.body.style.backgroundColor = 'rgb(40, 40, 40)';
+                document.body.style.color = 'white';
+                document.getElementById('bnt-tema').innerText = 'Tema Claro';
+            }
+        }
+    </script>
 
 </body>
 </html>

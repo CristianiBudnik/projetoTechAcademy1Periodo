@@ -60,7 +60,7 @@ header {
     color: goldenrod;
     }
 
-.btn-tema {
+    #btn-tema {
     padding: 10px 20px;
     cursor: pointer;
     background-color: goldenrod;
@@ -68,7 +68,7 @@ header {
     font-weight: bold;
     border-radius: 5px;
     margin: 10px;
-}
+    }
 
 body.light-mode {
     background: whitesmoke;
