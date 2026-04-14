@@ -8,7 +8,7 @@
 }
 
 body {
-    margin-top: 180px;
+    margin-top: 110px;
     font-family: Arial, sans-serif;
     color: goldenrod;
     background: black;
@@ -22,46 +22,46 @@ header {
     border-radius: 3px;
 
     nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 10px 20px;
-    
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 10px 20px;
+
         .logo img {
-        filter: drop-shadow(5px 5px 5px goldenrod);
-        max-width: 300px;
-        height: auto;
-        display: block;
+            filter: drop-shadow(5px 5px 5px goldenrod);
+            max-width: 300px;
+            height: auto;
+            display: block;
         }
 
         ul {
-        display: flex;
-        list-style: none;
-        gap: 20px; 
+            display: flex;
+            list-style: none;
+            gap: 40px;
         }
 
         li a {
-        text-decoration: none;
-        color: black;
-        font-weight: bold;
-        font-size: 18px;
-        transition: color 0.3s;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            font-size: 18px;
+            transition: color 0.3s;
         }
 
         a:hover {
-        color: goldenrod;
+            color: goldenrod;
         }
-        
+
         #btn-tema {
-        padding: 10px 20px;
-        cursor: pointer;
-        background-color: goldenrod;
-        border: none;
-        font-weight: bold;
-        border-radius: 5px;
-        margin: 10px;
+            padding: 10px 20px;
+            cursor: pointer;
+            background-color: goldenrod;
+            border: none;
+            font-weight: bold;
+            border-radius: 5px;
+            margin: 10px;
         }
     }
 }
@@ -69,7 +69,7 @@ header {
 
 main {
     padding-top: 10px;
-    width: 80%; 
+    width: 80%;
     max-width: 1200px;
     margin: 40px auto;
     background-color: whitesmoke;
@@ -78,47 +78,42 @@ main {
     width: auto;
 
     section {
-    padding: 30px 30px;
-    text-align: center;
+        padding: 30px 30px;
+        text-align: center;
     }
 
-    .molduraDoJogo{
-      margin-top: 0px;
-      height: 400px;
-      background-color: white;
-      border: 2px solid black;
-      border-radius: 5px;
-      overflow: hidden;
+    .molduraDoJogo {
+        margin-top: 0px;
+        height: 400px;
+        background-color: white;
+        border: 2px solid black;
+        border-radius: 5px;
+        overflow: hidden;
     }
-    
+
 }
 
 
 div {
-    display: flex; 
-    width: 100%; 
-    max-width: 600px;
+    display: contents;
+    width: 100%;
+    max-width: 700px;
     height: auto;
-    margin: 30px auto; 
+    margin: 30px auto;
     padding: 20px;
     border-radius: 10px;
     border: 1px solid goldenrod;
-    box-shadow: 0 0 30px rgba(218, 165, 32, 0.6); 
-    display: flex;
-    flex-direction: column;
+    box-shadow: 0 0 30px rgba(218, 165, 32, 0.6);
+
     h2 {
-    
-    text-align: center;
-    color: goldenrod;
-    margin-bottom: 15px;
+
+        text-align: center;
+        color: goldenrod;
     }
-    h3 {
-    text-align: center;
-    color: white;
-    }
+
     p {
-    text-align: center;
-    color: #ccc;
+        text-align: center;
+        color: black;
     }
 }
 
@@ -131,9 +126,10 @@ footer {
 
 
 @media (max-width: 480px) {
-    body{
-        margin-top: 125px;
+    body {
+        margin-top: 190px;
     }
+
     header nav {
         flex-direction: column;
         text-align: center;
@@ -146,12 +142,12 @@ footer {
     }
 
     header nav .logo img {
-    max-width: 200px;
-    height: auto;
-    display: block;
-}
+        max-width: 200px;
+        height: auto;
+        display: block;
+    }
 
-    a:hover{
+    a:hover {
         color: goldenrod;
     }
 
@@ -167,14 +163,17 @@ footer {
     }
 
     div {
-        width: 50%;
+        display: contents;
+        width: 95%;
+        gap: 18px;
+        text-align: center;
     }
 
     footer {
-        margin-top: 30px;
+        margin-top: 135px;
         position: relative;
         text-align: center;
-        color: black;
+        color: white;
     }
 
 }

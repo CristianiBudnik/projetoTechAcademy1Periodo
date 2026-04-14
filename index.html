@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,13 +14,14 @@
     <link rel="stylesheet" href="css/style.css">
 
     <link rel="shortcut icon" href="img/logo2SemFundo.png" type="image/x-icon">
-    
+
 </head>
+
 <body>
     <div id="conteudo-sensivel">
-    <header>
-        <nav>
-            <button id="btn-tema" onclick="
+        <header>
+            <nav>
+                <button id="btn-tema" onclick="
             if (document.body.style.backgroundColor == 'rgb(40, 40, 40)') {
                 document.body.style.backgroundColor = 'white';
                 document.body.style.color = 'black';
@@ -30,35 +32,35 @@
                 document.getElementById('btn-tema').innerText = 'Tema Claro';
             }
         ">Tema Escuro</button>
-        
-            <a href="#home" title="HOME" class="logo">
-                <img src="img/logo.png" alt="logo">
-            </a>
-            <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="sobre.html">Sobre</a>
-                </li>
-                <li>
-                    <a href="contato.html">Contato</a>
-                </li>
-                <li>
-                    <a href="jogar.html">Jogar</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
 
-    <div class="banner">
-        <a href="jogar.html" title="jogar">
-            <img src="img/banner.png" alt="Crystal Runner Banner">
-        </a>
-    </div>
-    
-    <main>
-        <section id="jogar">
+                <a href="#home" title="HOME" class="logo">
+                    <img src="img/logo.png" alt="logo">
+                </a>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="sobre.html">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="contato.html">Contato</a>
+                    </li>
+                    <li>
+                        <a href="jogar.html">Jogar</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="banner">
+            <a href="jogar.html" title="jogar">
+                <img src="img/banner.png" alt="Crystal Runner Banner">
+            </a>
+        </div>
+
+        <main>
+            <section id="jogar">
                 <h2 class="h2-main">JOGO DEMO</h2>
                 <br>
                 <p class="texto">
@@ -68,15 +70,15 @@
                 <div>
                     <a href="jogar.html" class="btn-jogar">JOGAR AGORA</a>
                 </div>
-        </section>
-    </main>
+            </section>
+        </main>
 
-    <footer>
-        <p>&copy; 2026 Crystal Runner. Todos os direitos reservados.</p>
-        <p>Desenvolvido por Cristiani Budnik</p>
-    </footer>
+        <footer>
+            <p>&copy; 2026 Crystal Runner. Todos os direitos reservados.</p>
+            <p>Desenvolvido por Cristiani Budnik</p>
+        </footer>
 
-    </div> 
+    </div>
 
     <script>
 
@@ -87,25 +89,25 @@
             alert("📢 NOTÍCIA: Este jogo é um GRANDE LANÇAMENTO deste ano!");
         }
 
-        
-        let nomeVisitante = prompt("Bem-vindo ao site! Qual é o seu nome?");
+
+        let nomeVisitante = prompt("Bem-vindo ao Crystal Runner! Qual é o seu nome?");
         let idadeVisitante = prompt("Olá, " + nomeVisitante + "! Qual é a sua idade para acessar o conteúdo sensível?");
 
         if (idadeVisitante >= 18) {
-            
+
             alert("Parabéns, " + nomeVisitante + "! Seu acesso foi liberado com sucesso.");
-            // ITEM 4: MANIPULAÇÃO DE VISIBILIDADE
+            
             document.getElementById("conteudo-sensivel").style.filter = "none";
         } else {
-           
+
             alert("Lamentamos, " + nomeVisitante + ". Por segurança, as imagens do jogo permanecerão borradas.");
-            
+
             document.getElementById("conteudo-sensivel").style.filter = "blur(20px)";
         }
     </script>
     <script>
-        function alternarTema(){
-            if (document.body.style.backgroundColor == 'rgb(40, 40, 40)'){
+        function alternarTema() {
+            if (document.body.style.backgroundColor == 'rgb(40, 40, 40)') {
                 document.body.style.backgroundColor = 'white';
                 document.body.style.color = 'black';
                 document.getElementById('bnt-tema').innerText = 'Tema Escuro';
@@ -118,4 +120,5 @@
     </script>
 
 </body>
+
 </html>

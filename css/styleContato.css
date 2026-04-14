@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Garante que padding não aumente o tamanho dos elementos */
+    box-sizing: border-box;
     font-family: 'Goldman', sans-serif;
     scroll-behavior: smooth;
     scrollbar-width: none;
@@ -22,46 +22,46 @@ header {
     border-radius: 3px;
 
     nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 10px 20px;
 
         .logo img {
-        filter: drop-shadow(5px 5px 5px goldenrod);
-        max-width: 300px;
-        height: auto;
-        display: block;
+            filter: drop-shadow(5px 5px 5px goldenrod);
+            max-width: 300px;
+            height: auto;
+            display: block;
         }
 
         ul {
-        display: flex;
-        list-style: none;
-        gap: 20px;
+            display: flex;
+            list-style: none;
+            gap: 40px;
         }
 
         li a {
-        text-decoration: none;
-        color: black;
-        font-weight: bold;
-        font-size: 18px;
-        transition: color 0.3s;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            font-size: 18px;
+            transition: color 0.3s;
         }
 
         a:hover {
-        color: goldenrod;
+            color: goldenrod;
         }
-        
+
         #btn-tema {
-        padding: 10px 20px;
-        cursor: pointer;
-        background-color: goldenrod;
-        border: none;
-        font-weight: bold;
-        border-radius: 5px;
-        margin: 10px;
+            padding: 10px 20px;
+            cursor: pointer;
+            background-color: goldenrod;
+            border: none;
+            font-weight: bold;
+            border-radius: 5px;
+            margin: 10px;
         }
     }
 
@@ -70,7 +70,7 @@ header {
 
 main {
     padding: 20px;
-    width: 90%; 
+    width: 90%;
     max-width: 1000px;
     margin: 40px auto;
     background-color: whitesmoke;
@@ -81,40 +81,49 @@ main {
     align-items: center;
 
     section {
-    text-align: center;
-    width: 100%;
-    max-width: 800px;
-    margin: 20px;
-    color: black; 
-
-        h2, main section p {
         text-align: center;
-        margin-bottom: 20px;
+        width: 100%;
+        max-width: 800px;
+        margin: 20px;
+        color: black;
+
+        h2,
+        main section p {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .contato {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-right: 20px;
+            align-items: center;
+            gap: 10px;
+
+            a img {
+                max-width: 50px;
+                display: block;
+                margin-top: 10px;
+            }
         }
     }
 }
 
-
-.contato {
+footer {
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-right: 20px;
-    align-items: center;
-    gap: 10px;
-    a img{
-        max-width: 50px;
-        display: block;
-        margin-top: 10px;
-    }
+    padding: 20px;
+    background-color: black;
+    color: white;
 }
 
 
 @media (max-width: 480px) {
-    body{
-        margin-top: 125px;
+    body {
+        margin-top: 190px;
     }
+
     header nav {
         flex-direction: column;
         text-align: center;
@@ -128,12 +137,12 @@ main {
     }
 
     header nav .logo img {
-    max-width: 200px;
-    height: auto;
-    display: block;
-}
+        max-width: 200px;
+        height: auto;
+        display: block;
+    }
 
-    a:hover{
+    a:hover {
         color: goldenrod;
     }
 
@@ -148,24 +157,24 @@ main {
     }
 
     .contato {
-    
+
         border-right: none;
         padding-right: 0;
         padding-bottom: 20px;
         margin-bottom: 20px;
         align-items: center;
-    
-        a img{
-        max-width: 50px;
-        display: block;
-        margin-top: 10px;
+
+        a img {
+            max-width: 50px;
+            display: block;
+            margin-top: 10px;
         }
     }
-}
+
     footer {
-        margin-top: 30px;
+        margin-top: 135px;
         position: relative;
         text-align: center;
-        color: rgb(255, 255, 255);
+        color: white;
     }
-
+}
