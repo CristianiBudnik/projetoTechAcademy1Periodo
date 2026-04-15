@@ -11,6 +11,9 @@
 
     <title>CRYSTAL RUNNER</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
     <link rel="stylesheet" href="css/style.css">
 
     <link rel="shortcut icon" href="img/logo2SemFundo.png" type="image/x-icon">
@@ -19,20 +22,11 @@
 
 <body>
     <div id="conteudo-sensivel">
-        <header>
+        <header id="mainHeader">
+            <div class="tema">
+                <i id="icontema" class="fa-solid fa-toggle-off"></i>
+            </div>
             <nav>
-                <button id="btn-tema" onclick="
-            if (document.body.style.backgroundColor == 'rgb(40, 40, 40)') {
-                document.body.style.backgroundColor = 'white';
-                document.body.style.color = 'black';
-                document.getElementById('btn-tema').innerText = 'Tema Escuro';
-            } else {
-                document.body.style.backgroundColor = 'rgb(40, 40, 40)';
-                document.body.style.color = 'white';
-                document.getElementById('btn-tema').innerText = 'Tema Claro';
-            }
-        ">Tema Escuro</button>
-
                 <a href="#home" title="HOME" class="logo">
                     <img src="img/logo.png" alt="logo">
                 </a>
@@ -60,6 +54,20 @@
         </div>
 
         <main>
+
+            <script>
+                const iconetema = document.getElementById("icontema");
+                const header = document.getElementById("mainHeader");
+
+                iconetema.addEventListener("click", () => {
+
+                    document.body.classList.toggle("dark-tema");
+                    header.classList.toggle("dark-header");
+                    iconetema.classList.toggle("fa-toggle-off");
+                    iconetema.classList.toggle("fa-toggle-on");
+                });
+            </script>
+
             <section id="jogar">
                 <h2 class="h2-main">JOGO DEMO</h2>
                 <br>
@@ -96,7 +104,7 @@
         if (idadeVisitante >= 18) {
 
             alert("Parabéns, " + nomeVisitante + "! Seu acesso foi liberado com sucesso.");
-            
+
             document.getElementById("conteudo-sensivel").style.filter = "none";
         } else {
 

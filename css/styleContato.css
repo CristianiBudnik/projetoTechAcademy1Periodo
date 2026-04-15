@@ -12,6 +12,11 @@ body {
     color: goldenrod;
     background: black;
     margin-top: 180px;
+
+    body.light-mode {
+        background: whitesmoke;
+        color: #121212;
+    }
 }
 
 header {
@@ -20,6 +25,12 @@ header {
     top: 0;
     background-color: white;
     border-radius: 3px;
+
+    .tema {
+        cursor: pointer;
+        font-size: 24px;
+        color: goldenrod;
+    }
 
     nav {
         display: flex;
@@ -52,16 +63,6 @@ header {
 
         a:hover {
             color: goldenrod;
-        }
-
-        #btn-tema {
-            padding: 10px 20px;
-            cursor: pointer;
-            background-color: goldenrod;
-            border: none;
-            font-weight: bold;
-            border-radius: 5px;
-            margin: 10px;
         }
     }
 
@@ -118,6 +119,33 @@ footer {
     color: white;
 }
 
+body.dark-tema main {
+    background-color: #121212;
+    color: #f5f5f5;
+}
+
+.dark-header {
+    background-color: #000000;
+    color: #fff;
+}
+
+body.dark-tema .texto {
+    color: #ddd;
+}
+
+body.dark-tema header nav a {
+    color: white;
+}
+
+body.dark-tema header nav a:hover {
+    color: goldenrod;
+}
+
+body.dark-tema section h2,
+body.dark-tema section p {
+    color: white;
+}
+
 
 @media (max-width: 480px) {
     body {
@@ -132,7 +160,7 @@ footer {
     }
 
     header nav ul {
-        gap: 10px;
+        gap: 40px;
         padding: 10px 0;
     }
 

@@ -1401,7 +1401,8 @@ self.C3_ExpressionFuncs = [
 		p => {
 			const v0 = p._GetNode(0).GetVar();
 			return () => (v0.GetValue() * 0.5);
-		}
+		},
+		() => 3
 ];
 
 

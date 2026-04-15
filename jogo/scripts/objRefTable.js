@@ -35,6 +35,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Acts.SetOpacity,
 		C3.Plugins.Sprite.Acts.SetPos,
 		C3.Behaviors.Follow.Acts.FollowObject,
+		C3.Plugins.System.Acts.SubVar,
 		C3.Plugins.System.Cnds.EveryTick,
 		C3.Plugins.Sprite.Acts.MoveForward,
 		C3.Plugins.Mouse.Cnds.OnObjectClicked
@@ -75,8 +76,11 @@ self.C3_JsPropNameTable = [
 	{montanhas2: 0},
 	{Sprite2: 0},
 	{Áudio: 0},
+	{btnJogarNovamente: 0},
+	{btnSair: 0},
 	{cristaisColetados: 0},
-	{velocidadeSombra: 0}
+	{velocidadeSombra: 0},
+	{vidas: 0}
 ];
 
 self.InstanceType = {
@@ -106,5 +110,7 @@ self.InstanceType = {
 	pedra: class extends self.ISpriteInstance {},
 	montanhas2: class extends self.ISpriteInstance {},
 	Sprite2: class extends self.ISpriteInstance {},
-	Áudio: class extends self.IInstance {}
+	Áudio: class extends self.IInstance {},
+	btnJogarNovamente: class extends self.ITextInstance {},
+	btnSair: class extends self.ITextInstance {}
 }
