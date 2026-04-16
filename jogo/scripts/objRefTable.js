@@ -78,6 +78,8 @@ self.C3_JsPropNameTable = [
 	{Áudio: 0},
 	{btnJogarNovamente: 0},
 	{btnSair: 0},
+	{PlanoDeFundoEmBlocos3: 0},
+	{btnPular: 0},
 	{cristaisColetados: 0},
 	{velocidadeSombra: 0},
 	{vidas: 0}
@@ -112,5 +114,7 @@ self.InstanceType = {
 	Sprite2: class extends self.ISpriteInstance {},
 	Áudio: class extends self.IInstance {},
 	btnJogarNovamente: class extends self.ITextInstance {},
-	btnSair: class extends self.ITextInstance {}
+	btnSair: class extends self.ITextInstance {},
+	PlanoDeFundoEmBlocos3: class extends self.ITiledBackgroundInstance {},
+	btnPular: class extends self.ITextInstance {}
 }
