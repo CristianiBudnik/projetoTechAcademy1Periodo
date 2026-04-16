@@ -80,6 +80,7 @@ self.C3_JsPropNameTable = [
 	{btnSair: 0},
 	{PlanoDeFundoEmBlocos3: 0},
 	{btnPular: 0},
+	{PlanoDeFundoEmBlocos4: 0},
 	{cristaisColetados: 0},
 	{velocidadeSombra: 0},
 	{vidas: 0}
@@ -116,5 +117,6 @@ self.InstanceType = {
 	btnJogarNovamente: class extends self.ITextInstance {},
 	btnSair: class extends self.ITextInstance {},
 	PlanoDeFundoEmBlocos3: class extends self.ITiledBackgroundInstance {},
-	btnPular: class extends self.ITextInstance {}
+	btnPular: class extends self.ITextInstance {},
+	PlanoDeFundoEmBlocos4: class extends self.ITiledBackgroundInstance {}
 }
